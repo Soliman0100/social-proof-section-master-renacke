@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+/* 
+font-family: "League Spartan", serif;
+*/
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pic-top {
+  left: 0;
+  top: 0;
+}
+.pic-bottom {
+  right: 0;
+  bottom: 0;
+}
+body {
+  font-family: "League Spartan", serif;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+picture {
+  position: absolute;
+}
+section {
+  padding: 0 5em;
+  margin-top: 5em;
+}
+@media (max-width: 833px) {
+  section {
+    padding: 0 20px;
+  }
+}
+.top-title {
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  align-items: center;
+}
+@media (max-width: 833px) {
+  .top-title {
+    flex-direction: column;
+    margin-top: 5em;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.top-title h1 {
+  font-size: 3rem;
+  max-width: 500px;
+  line-height: 1.2;
+  color: var(--Very-Dark-Magenta);
+}
+
+.top-title p {
+  max-width: 400px;
+  margin: 1em 0;
+  line-height: 1.8;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 500;
+}
+@media (max-width: 833px) {
+  .top-title h1 {
+    width: 100%;
+  }
+  .top-title p {
+    margin: 1em auto;
+  }
+}
+.row-stars {
+  display: flex;
+  padding: 1em 2em;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 10px;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.row-stars .stars-img {
+  margin-right: 1.2em;
+}
+.row-stars h2 {
+  font-size: 1.2em;
+  color: var(--Very-Dark-Magenta);
+}
+.two {
+  transform: translateX(2em);
+}
+.three {
+  transform: translateX(4em);
+}
+@media (max-width: 833px) {
+  .servesic {
+    margin-top: 2em;
+  }
+  .two,
+  .three {
+    transform: translateX(0);
+  }
+}
+.cards {
+  display: flex;
+}
+@media (max-width: 833px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}
+.cards .card {
+  padding: 3em 2em;
+  background-color: var(--Very-Dark-Magenta);
+  margin: 0 1em;
+  border-radius: 15px;
+  margin-bottom: 2em;
+}
+.profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.profile img {
+  margin-right: 1em;
+  border-radius: 50%;
+  width: 50px;
+}
+.profile .title-pers h3 {
+  font-size: 1rem;
+  color: var(--White);
+  margin-bottom: 5px;
+}
+.profile .title-pers h4 {
+  font-size: 1rem;
+  color: var(--Soft-Pink);
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.card p {
+  line-height: 1.5;
+  color: var(--White);
+}
+.card-2 {
+  transform: translateY(2em);
+}
+.card-3 {
+  transform: translateY(4em);
+}
+@media (max-width: 833px) {
+  .card-2,
+  .card-3 {
+    transform: translateY(0);
+  }
+}
